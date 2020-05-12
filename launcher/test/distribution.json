@@ -13,8 +13,14 @@
 			"version": "0.0.1",
 			"adress": "mc.westeroscraft.com",
 			"minecraftVersion": "1.11.2",
+			"discord": {
+				"shortId": "SID",
+				"largeImageText": "LIT",
+				"largeImageKey": "LIK"
+			},
 			"mainServer": true,
-			"autoconnect": true
+			"autoconnect": true,
+			"modules": []
 		}
 	]
 }
