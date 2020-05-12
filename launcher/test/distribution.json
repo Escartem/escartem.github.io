@@ -212,6 +212,32 @@
                             }
                         }
                     ]
+				},
+				{
+					"id": "mezz:jei:1.11.2-4.5.0.290",
+					"name": "Just Enough Items",
+					"type": "ForgeMod",
+					"required": {
+						"value": false
+					},
+					"artifact": {
+						"size": 538740,
+						"MD5": "f4d931f6db6210621a86fa1e7eae8016",
+						"url": "https://escartem.github.io/launcher/test/files/mods/jei_1.11.2-4.5.0.290.jar"
+					}
+				},
+				{
+					"id": "net.optifine:optifine:1.11.2_HD_U_C7",
+					"name": "Optifine",
+					"type": "ForgeMod",
+					"required": {
+						"value": true
+					},
+					"artifact": {
+						"size": 2254712,
+						"MD5": "0dd7761e908f9b245bb0dc0fac5649f5",
+						"url": "https://escartem.github.io/launcher/test/files/mods/Optifine_1.11.2_HD_U_C7.jar"
+					}
 				}
 			]
 		}
