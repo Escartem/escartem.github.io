@@ -1,0 +1,20 @@
+{
+	"version": "1.0.0",
+	"java": {
+		"oracle": "https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"
+	},
+	"rss": "https://forum.westeroscraft.com/forum/news.2/index.rss",
+	"servers": [
+		{
+			"id": "SampleServeur-1.11.2",
+			"name": "Serveur Exemple",
+			"description": "Serveur exemple c'est tout...",
+			"icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/server-prod.png",
+			"version": "0.0.1",
+			"adress": "mc.westeroscraft.com",
+			"minecraftVersion": "1.11.2",
+			"mainServer": true,
+			"autoconnect": true,
+		}
+	]
+}
