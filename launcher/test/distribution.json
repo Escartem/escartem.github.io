@@ -9,9 +9,9 @@
 			"id": "SampleServeur-1.11.2",
 			"name": "Serveur Exemple",
 			"description": "Serveur exemple c'est tout...",
-			"icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/server-prod.png",
+			"icon": "https://escartem.github.io/launcher/test/files/ressources/server-prod.png",
 			"version": "0.0.1",
-			"adress": "mc.westeroscraft.com",
+			"adress": "escartem.aternos.me",
 			"minecraftVersion": "1.11.2",
 			"discord": {
 				"shortId": "SID",
@@ -19,7 +19,7 @@
 				"largeImageKey": "LIK"
 			},
 			"mainServer": true,
-			"autoconnect": true,
+			"autoconnect": false,
 			"modules": [
                 {
                     "id": "net.minecraftforge:forge:1.11.2-13.20.1.2429",
@@ -236,7 +236,7 @@
 					"artifact": {
 						"size": 2254712,
 						"MD5": "0dd7761e908f9b245bb0dc0fac5649f5",
-						"url": "https://escartem.github.io/launcher/test/files/mods/Optifine_1.11.2_HD_U_C7.jar"
+						"url": "https://escartem.github.io/launcher/test/files/mods/OptiFine_1.11.2_HD_U_C7.jar"
 					}
 				}
 			]
