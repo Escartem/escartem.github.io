@@ -3,7 +3,7 @@
 	"java": {
 		"oracle": "https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"
 	},
-	"rss": "https://forum.westeroscraft.com/forum/news.2/index.rss",
+	"rss": "https://escartem.github.io/launcher/test/files/ressources/feed.rss",
 	"servers": [
 		{
 			"id": "SampleServeur-1.11.2",
