@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
+  <channel>
+    <title>Nouveautées</title>
+    <description>Nouveautées et annonces</description>
+    <pubDate>Tue, 12 May 3030 18:44:00 +0000</pubDate>
+    <lastBuildDate>Tue, 12 May 3030 18:44:00 +0000</lastBuildDate>
+    <generator>Nouveautées Escartem Launcher</generator>
+    <link>#</link>
+    <atom:link rel="self" type="application/rss+xml" href="https://escartem.github.io/launcher/test/files/ressources/feed.rss"/>
+    <item>
+      <title>Lancement du launcher</title>
+      <pubDate>Tue, 12 May 3030 18:46:00 +0000</pubDate>
+      <link>#</link>
+      <guid>#</guid>
+      <author>Escartem</author>
+      <dc:creator>Escartem</dc:creator>
+      <content:encoded><![CDATA[<div class="bbWrapper"><br />
+Texte!<br />
+<br />
+Encore du texte.<br />
+<br />
+<b>Texte en gras</b><br />
+<br />
+<b><span style="color: rgb(184, 49, 47)">Texte coloré.</span></b><br />
+<br />
+The prize will be advised shortly.<br />
+<br />
+<a href="https://forum.westeroscraft.com/attachments/1586958174738-png.2326/"
+		target="_blank"><img src="/data/attachments/2/2326-ffeae61fb860f34a42e5abf4f57af5e6.jpg"
+		class="bbImage "
+		style=""
+		alt="2326" /></a><br />
+<b>Photo exemple</b>.<br />
+<br />
+<u>Texte souligné.</u><br />
+<br />
+<b>Au revoir!</b></div>]]></content:encoded>
+      <slash:comments>0</slash:comments>
+    </item>
+  </channel>
+</rss>
