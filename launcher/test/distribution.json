@@ -14,7 +14,7 @@
 			"adress": "mc.westeroscraft.com",
 			"minecraftVersion": "1.11.2",
 			"mainServer": true,
-			"autoconnect": true,
+			"autoconnect": true
 		}
 	]
 }
