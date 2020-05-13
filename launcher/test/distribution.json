@@ -1,5 +1,10 @@
 {
 	"version": "1.0.0",
+	"discord": {
+		"clientId": "710056086538813460",
+		"smallImageText": "SampleLauncher",
+		"smallImageKey": "discord-sik"
+	},
 	"java": {
 		"oracle": "https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"
 	},
@@ -14,9 +19,9 @@
 			"adress": "escartem.aternos.me",
 			"minecraftVersion": "1.11.2",
 			"discord": {
-				"shortId": "SID",
-				"largeImageText": "LIT",
-				"largeImageKey": "LIK"
+				"shortId": "Production",
+				"largeImageText": "Serveur Sample",
+				"largeImageKey": "server-prod"
 			},
 			"mainServer": true,
 			"autoconnect": false,
