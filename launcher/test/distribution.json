@@ -2,7 +2,7 @@
 	"version": "1.0.1",
 	"discord": {
 		"clientId": "710056086538813460",
-        "smallImageText": "WesterosCraft",
+        "smallImageText": "Sample Launcher",
         "smallImageKey": "discord-sik"
 	},
 	"java": {
@@ -19,8 +19,8 @@
 			"adress": "escartem.aternos.me",
 			"minecraftVersion": "1.11.2",
 			"discord": {
-				"shortId": "Production",
-                "largeImageText": "WesterosCraft Production Server",
+				"shortId": "Sample",
+                "largeImageText": "Sample Serveur",
                 "largeImageKey": "server-prod"
 			},
 			"mainServer": true,
