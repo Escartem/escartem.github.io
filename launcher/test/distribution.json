@@ -1,9 +1,9 @@
 {
 	"version": "1.0.0",
 	"discord": {
-		"clientId": "710056086538813460",
-		"smallImageText": "SampleLauncher",
-		"smallImageKey": "discord-sik"
+		"clientId": "385581240906022916",
+        "smallImageText": "WesterosCraft",
+        "smallImageKey": "seal-circle"
 	},
 	"java": {
 		"oracle": "https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"
@@ -20,8 +20,8 @@
 			"minecraftVersion": "1.11.2",
 			"discord": {
 				"shortId": "Production",
-				"largeImageText": "Serveur Sample",
-				"largeImageKey": "server-prod"
+                "largeImageText": "WesterosCraft Production Server",
+                "largeImageKey": "server-prod"
 			},
 			"mainServer": true,
 			"autoconnect": false,
