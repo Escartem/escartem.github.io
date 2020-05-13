@@ -1,9 +1,9 @@
 {
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"discord": {
-		"clientId": "385581240906022916",
+		"clientId": "710056086538813460",
         "smallImageText": "WesterosCraft",
-        "smallImageKey": "seal-circle"
+        "smallImageKey": "discord-sik"
 	},
 	"java": {
 		"oracle": "https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"
@@ -15,7 +15,7 @@
 			"name": "Serveur Exemple",
 			"description": "Serveur exemple c'est tout...",
 			"icon": "https://escartem.github.io/launcher/test/files/ressources/server-prod.png",
-			"version": "0.0.1",
+			"version": "0.0.2",
 			"adress": "escartem.aternos.me",
 			"minecraftVersion": "1.11.2",
 			"discord": {
