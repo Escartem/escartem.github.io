@@ -274,7 +274,7 @@
             "id": "Testing-1.12.2",
             "name": "Testing 1.12.2",
             "description": "Testing 1.12.2",
-            "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/server-test.png",
+            "icon": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/resources/server-prod.png",
             "version": "0.0.1",
             "address": "play.hypixel.net",
             "minecraftVersion": "1.12.2",
@@ -295,7 +295,7 @@
                     {
                         "size": 4937218,
                         "MD5": "5320593704af58b3906e7106d27e41c8",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/forge-1.12.2-14.23.5.2797-universal.jar"
+                        "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/forge-1.12.2-14.23.5.2797-universal.jar"
                     },
                     "subModules": [
                     {
@@ -306,7 +306,7 @@
                         {
                             "size": 32999,
                             "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/launchwrapper-1.12.jar"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/launchwrapper-1.12.jar"
                         }
                     },
                     {
@@ -317,7 +317,7 @@
                         {
                             "size": 247787,
                             "MD5": "f5ad16c7f0338b541978b0430d51dc83",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/asm-all-5.2.jar"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/asm-all-5.2.jar"
                         }
                     },
                     {
@@ -328,7 +328,7 @@
                         {
                             "size": 248566,
                             "MD5": "f251ba666cccb260ff7215b2cbeee8d4",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/jline-2.13.jar"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/jline-2.13.jar"
                         }
                     },
                     {
@@ -339,7 +339,7 @@
                         {
                             "size": 1474672,
                             "MD5": "379c15c4f724421c6d5d7aecedaf87a6",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-library-2.11.1.jar.pack.xz"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/scala-library-2.11.1.jar.pack.xz"
                         }
                     },
                     {
@@ -350,7 +350,7 @@
                         {
                             "size": 3076920,
                             "MD5": "7d89e952f2d5c74577310cd2c28e3f20",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-compiler-2.11.1.jar.pack.xz"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/scala-compiler-2.11.1.jar.pack.xz"
                         }
                     },
                     {
@@ -361,7 +361,7 @@
                         {
                             "size": 21324,
                             "MD5": "04e3428b2600ace33c7ae2bf1f6c0a4c",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-actors-migration_2.11-1.1.0.jar.pack.xz"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/scala-actors-migration_2.11-1.1.0.jar.pack.xz"
                         }
                     },
                     {
@@ -372,7 +372,7 @@
                         {
                             "size": 7956,
                             "MD5": "ed9b1d27aba8ac4090a3749c4dfc895a",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-continuations-library_2.11-1.0.2.jar.pack.xz"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/scala-continuations-library_2.11-1.0.2.jar.pack.xz"
                         }
                     },
                     {
@@ -383,7 +383,7 @@
                         {
                             "size": 46140,
                             "MD5": "a8232db22a72a981de6b1399eb86dff7",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-continuations-plugin_2.11.1-1.0.2.jar.pack.xz"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/scala-continuations-plugin_2.11.1-1.0.2.jar.pack.xz"
                         }
                     },
                     {
@@ -394,7 +394,7 @@
                         {
                             "size": 85568,
                             "MD5": "2e50a7df17680daadacca69f07f8a16d",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-parser-combinators_2.11-1.0.1.jar.pack.xz"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/scala-parser-combinators_2.11-1.0.1.jar.pack.xz"
                         }
                     },
                     {
@@ -405,7 +405,7 @@
                         {
                             "size": 1070312,
                             "MD5": "84e5dc81c10e2bd74c579c9d0332fdd9",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-reflect-2.11.1.jar.pack.xz"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/scala-reflect-2.11.1.jar.pack.xz"
                         }
                     },
                     {
@@ -416,7 +416,7 @@
                         {
                             "size": 736795,
                             "MD5": "1d360289e697022a3f57abaad344b28f",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-swing_2.11-1.0.1.jar"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/scala-swing_2.11-1.0.1.jar"
                         }
                     },
                     {
@@ -427,7 +427,7 @@
                         {
                             "size": 217812,
                             "MD5": "cc891b094a4c32dedc56bfefe9b072ff",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-xml_2.11-1.0.2.jar.pack.xz"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/scala-xml_2.11-1.0.2.jar.pack.xz"
                         }
                     },
                     {
@@ -438,7 +438,7 @@
                         {
                             "size": 746612,
                             "MD5": "25cb22c3078e9fb3f7a861c912924862",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/akka-actor_2.11-2.3.3.jar.pack.xz"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/akka-actor_2.11-2.3.3.jar.pack.xz"
                         }
                     },
                     {
@@ -449,7 +449,7 @@
                         {
                             "size": 56636,
                             "MD5": "10ec4ccabc4e68aac9cf87165ead5d7d",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/config-1.2.1.jar.pack.xz"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/config-1.2.1.jar.pack.xz"
                         }
                     },
                     {
@@ -460,7 +460,7 @@
                         {
                             "size": 5762,
                             "MD5": "a3e3c3186e41c4a1a3027ba2bb23cdc6",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/lzma-0.0.1.jar"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/lzma-0.0.1.jar"
                         }
                     },
                     {
@@ -471,7 +471,7 @@
                         {
                             "size": 2523218,
                             "MD5": "8fc4d4e0129244f9fd39650c5f30feb2",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/trove4j-3.0.3.jar"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/trove4j-3.0.3.jar"
                         }
                     },
                     {
@@ -482,7 +482,7 @@
                         {
                             "size": 318956,
                             "MD5": "e5d2b7f46c4800a32f62ce75676a5710",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/vecmath-1.5.2.jar"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/vecmath-1.5.2.jar"
                         }
                     },
                     {
@@ -493,7 +493,7 @@
                         {
                             "size": 78175,
                             "MD5": "0a5ec84e23df9d7cfb4063bc55f2744c",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/jopt-simple-5.0.3.jar"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/jopt-simple-5.0.3.jar"
                         }
                     },
                     {
@@ -504,7 +504,7 @@
                         {
                             "size": 54961,
                             "MD5": "7741ebf29690ee7d9dde9cf4376347fc",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/maven-artifact-3.5.3.jar"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/maven-artifact-3.5.3.jar"
                         }
                     },
                     {
@@ -515,7 +515,7 @@
                         {
                             "size": 15098,
                             "MD5": "6eb9e61097bee3103a2fdc42746b76a4",
-                            "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/MercuriusUpdater-1.12.2.jar"
+                            "url": "https://escartem.github.io/launcher/test/files/Testing-1.12.2/forge/MercuriusUpdater-1.12.2.jar"
                         }
                     }]
                 }]
