@@ -3,14 +3,14 @@
   <channel>
     <title>Nouveautées</title>
     <description>Nouveautées et annonces</description>
-    <pubDate>Tue, 12 May 2020 13:39:00 +0060</pubDate>
-    <lastBuildDate>Wed, 13 May 2020 17:40:00 +0060</lastBuildDate>
+    <pubDate>Tue, 12 May 2020 13:39:00 +0000</pubDate>
+    <lastBuildDate>Wed, 13 May 2020 17:40:00 +0000</lastBuildDate>
     <generator>Nouveautées Escartem Launcher</generator>
     <link>#</link>
     <atom:link rel="self" type="application/rss+xml" href="https://escartem.github.io/launcher/test/files/ressources/feed.rss"/>
     <item>
       <title>Lancement du launcher</title>
-      <pubDate>Tue, 12 May 2020 17:40:00 +0060</pubDate>
+      <pubDate>Tue, 12 May 2020 17:40:00 +0000</pubDate>
       <link>#</link>
       <guid>#</guid>
       <author>Escartem</author>
