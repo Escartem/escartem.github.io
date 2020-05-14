@@ -1,250 +1,631 @@
 {
-	"version": "1.0.1",
-	"discord": {
-		"clientId": "710056086538813460",
+    "version": "1.0.1",
+    "discord":
+    {
+        "clientId": "710056086538813460",
         "smallImageText": "Sample Launcher",
         "smallImageKey": "discord-sik"
-	},
-	"java": {
-		"oracle": "https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"
-	},
-	"rss": "https://escartem.github.io/launcher/test/files/ressources/feed.rss",
-	"servers": [
-		{
-			"id": "SampleServeur-1.11.2",
-			"name": "Serveur Exemple",
-			"description": "Serveur exemple c'est tout...",
-			"icon": "https://escartem.github.io/launcher/test/files/ressources/server-prod.png",
-			"version": "0.0.2",
-			"adress": "escartem.aternos.me",
-			"minecraftVersion": "1.11.2",
-			"discord": {
-				"shortId": "Sample",
-                "largeImageText": "Sample Serveur",
-                "largeImageKey": "server-prod"
-			},
-			"mainServer": true,
-			"autoconnect": false,
-			"modules": [
+    },
+    "java":
+    {
+        "oracle": "https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"
+    },
+    "rss": "https://escartem.github.io/launcher/test/files/resources/feed.rss",
+    "servers": [
+    {
+        "id": "SampleServeur-1.11.2",
+        "name": "Serveur Exemple",
+        "description": "Serveur exemple c'est tout...",
+        "icon": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/resources/server-prod.png",
+        "version": "0.0.2",
+        "adress": "escartem.aternos.me",
+        "minecraftVersion": "1.11.2",
+        "discord":
+        {
+            "shortId": "Sample",
+            "largeImageText": "Sample Serveur",
+            "largeImageKey": "server-prod"
+        },
+        "mainServer": true,
+        "autoconnect": false,
+        "modules": [
+        {
+            "id": "net.minecraftforge:forge:1.11.2-13.20.1.2429",
+            "name": "Minecraft Forge",
+            "type": "ForgeHosted",
+            "artifact":
+            {
+                "size": 4450992,
+                "MD5": "3fcc9b0104f0261397d3cc897e55a1c5",
+                "url": "http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.11.2-13.20.1.2429/forge-1.11.2-13.20.1.2429-universal.jar"
+            },
+            "subModules": [
+            {
+                "id": "net.minecraft:launchwrapper:1.12",
+                "name": "Mojang (LaunchWrapper)",
+                "type": "Library",
+                "artifact":
                 {
-                    "id": "net.minecraftforge:forge:1.11.2-13.20.1.2429",
-                    "name": "Minecraft Forge",
-                    "type": "ForgeHosted",
-                    "artifact": {
-                        "size": 4450992,
-                        "MD5": "3fcc9b0104f0261397d3cc897e55a1c5",
-                        "url": "http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.11.2-13.20.1.2429/forge-1.11.2-13.20.1.2429-universal.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "net.minecraft:launchwrapper:1.12",
-                            "name": "Mojang (LaunchWrapper)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 32999,
-                                "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/launchwrapper-1.12.jar"
-                            }
-                        },
-                        {
-                            "id": "org.ow2.asm:asm-all:5.0.3",
-                            "name": "Mojang (ASM)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 241639,
-                                "MD5": "c5cc4613bbdfba3ccf5f0ab85390d0b8",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/asm-all-5.0.3.jar"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-library:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-library)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 1474672,
-                                "MD5": "379c15c4f724421c6d5d7aecedaf87a6",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/scala-library-2.11.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-compiler:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-compiler)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 3076920,
-                                "MD5": "7d89e952f2d5c74577310cd2c28e3f20",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/scala-compiler-2.11.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-actors-migration_2.11:1.1.0@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-actors-migration)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 21324,
-                                "MD5": "04e3428b2600ace33c7ae2bf1f6c0a4c",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/scala-actors-migration_2.11-1.1.0.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-continuations-library)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 7956,
-                                "MD5": "ed9b1d27aba8ac4090a3749c4dfc895a",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/scala-continuations-library_2.11-1.0.2.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-continuations-plugin)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 46140,
-                                "MD5": "a8232db22a72a981de6b1399eb86dff7",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/scala-continuations-plugin_2.11.1-1.0.2.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-parser-combinators_2.11:1.0.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-parser-combinators)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 85568,
-                                "MD5": "2e50a7df17680daadacca69f07f8a16d",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/scala-parser-combinators_2.11-1.0.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-reflect:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-reflect)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 1070312,
-                                "MD5": "84e5dc81c10e2bd74c579c9d0332fdd9",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/scala-reflect-2.11.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-swing_2.11:1.0.1",
-                            "name": "Minecraft Forge (scala-swing)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 736795,
-                                "MD5": "1d360289e697022a3f57abaad344b28f",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/scala-swing_2.11-1.0.1.jar"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-xml_2.11:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-xml)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 217812,
-                                "MD5": "cc891b094a4c32dedc56bfefe9b072ff",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/scala-xml_2.11-1.0.2.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "com.typesafe.akka:akka-actor_2.11:2.3.3@jar.pack.xz",
-                            "name": "Minecraft Forge (akka-actor)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 746612,
-                                "MD5": "25cb22c3078e9fb3f7a861c912924862",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/akka-actor_2.11-2.3.3.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "com.typesafe:config:1.2.1@jar.pack.xz",
-                            "name": "Minecraft Forge (typesafe-config)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 56636,
-                                "MD5": "10ec4ccabc4e68aac9cf87165ead5d7d",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/config-1.2.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "lzma:lzma:0.0.1",
-                            "name": "Mojang (LZMA)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 5762,
-                                "MD5": "a3e3c3186e41c4a1a3027ba2bb23cdc6",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/lzma-0.0.1.jar"
-                            }
-                        },
-                        {
-                            "id": "net.sf.trove4j:trove4j:3.0.3",
-                            "name": "Trove4J",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 2523218,
-                                "MD5": "8fc4d4e0129244f9fd39650c5f30feb2",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/trove4j-3.0.3.jar"
-                            }
-                        },
-                        {
-                            "id": "java3d:vecmath:1.5.2",
-                            "name": "Vecmath",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 318956,
-                                "MD5": "e5d2b7f46c4800a32f62ce75676a5710",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/vecmath-1.5.2.jar"
-                            }
-                        },
-                        {
-                            "id": "net.sf.jopt-simple:jopt-simple:4.6",
-                            "name": "Jopt-simple",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 62477,
-                                "MD5": "13560a58a79b46b82057686543e8d727",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/jopt-simple-4.6.jar"
-                            }
-                        },
-                        {
-                            "id": "net.minecraftforge:MercuriusUpdater:1.11.2",
-                            "name": "MercuriusUpdater",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 15146,
-                                "MD5": "7556d06064ebbfa3b334a15092d725d0",
-                                "url": "https://escartem.github.io/launcher/test/files/forge/MercuriusUpdater-1.11.2.jar"
-                            }
-                        }
-                    ]
-				},
-				{
-					"id": "mezz:jei:1.11.2-4.5.0.290",
-					"name": "Just Enough Items",
-					"type": "ForgeMod",
-					"required": {
-						"value": false
-					},
-					"artifact": {
-						"size": 538740,
-						"MD5": "f4d931f6db6210621a86fa1e7eae8016",
-						"url": "https://escartem.github.io/launcher/test/files/mods/jei_1.11.2-4.5.0.290.jar"
-					}
-				},
-				{
-					"id": "net.optifine:optifine:1.11.2_HD_U_C7",
-					"name": "Optifine",
-					"type": "ForgeMod",
-					"required": {
-						"value": true
-					},
-					"artifact": {
-						"size": 2254712,
-						"MD5": "0dd7761e908f9b245bb0dc0fac5649f5",
-						"url": "https://escartem.github.io/launcher/test/files/mods/OptiFine_1.11.2_HD_U_C7.jar"
-					}
-				}
-			]
-		}
-	]
+                    "size": 32999,
+                    "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/launchwrapper-1.12.jar"
+                }
+            },
+            {
+                "id": "org.ow2.asm:asm-all:5.0.3",
+                "name": "Mojang (ASM)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 241639,
+                    "MD5": "c5cc4613bbdfba3ccf5f0ab85390d0b8",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/asm-all-5.0.3.jar"
+                }
+            },
+            {
+                "id": "org.scala-lang:scala-library:2.11.1@jar.pack.xz",
+                "name": "Minecraft Forge (scala-library)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 1474672,
+                    "MD5": "379c15c4f724421c6d5d7aecedaf87a6",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/scala-library-2.11.1.jar.pack.xz"
+                }
+            },
+            {
+                "id": "org.scala-lang:scala-compiler:2.11.1@jar.pack.xz",
+                "name": "Minecraft Forge (scala-compiler)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 3076920,
+                    "MD5": "7d89e952f2d5c74577310cd2c28e3f20",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/scala-compiler-2.11.1.jar.pack.xz"
+                }
+            },
+            {
+                "id": "org.scala-lang:scala-actors-migration_2.11:1.1.0@jar.pack.xz",
+                "name": "Minecraft Forge (scala-actors-migration)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 21324,
+                    "MD5": "04e3428b2600ace33c7ae2bf1f6c0a4c",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/scala-actors-migration_2.11-1.1.0.jar.pack.xz"
+                }
+            },
+            {
+                "id": "org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2@jar.pack.xz",
+                "name": "Minecraft Forge (scala-continuations-library)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 7956,
+                    "MD5": "ed9b1d27aba8ac4090a3749c4dfc895a",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/scala-continuations-library_2.11-1.0.2.jar.pack.xz"
+                }
+            },
+            {
+                "id": "org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2@jar.pack.xz",
+                "name": "Minecraft Forge (scala-continuations-plugin)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 46140,
+                    "MD5": "a8232db22a72a981de6b1399eb86dff7",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/scala-continuations-plugin_2.11.1-1.0.2.jar.pack.xz"
+                }
+            },
+            {
+                "id": "org.scala-lang:scala-parser-combinators_2.11:1.0.1@jar.pack.xz",
+                "name": "Minecraft Forge (scala-parser-combinators)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 85568,
+                    "MD5": "2e50a7df17680daadacca69f07f8a16d",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/scala-parser-combinators_2.11-1.0.1.jar.pack.xz"
+                }
+            },
+            {
+                "id": "org.scala-lang:scala-reflect:2.11.1@jar.pack.xz",
+                "name": "Minecraft Forge (scala-reflect)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 1070312,
+                    "MD5": "84e5dc81c10e2bd74c579c9d0332fdd9",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/scala-reflect-2.11.1.jar.pack.xz"
+                }
+            },
+            {
+                "id": "org.scala-lang:scala-swing_2.11:1.0.1",
+                "name": "Minecraft Forge (scala-swing)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 736795,
+                    "MD5": "1d360289e697022a3f57abaad344b28f",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/scala-swing_2.11-1.0.1.jar"
+                }
+            },
+            {
+                "id": "org.scala-lang:scala-xml_2.11:1.0.2@jar.pack.xz",
+                "name": "Minecraft Forge (scala-xml)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 217812,
+                    "MD5": "cc891b094a4c32dedc56bfefe9b072ff",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/scala-xml_2.11-1.0.2.jar.pack.xz"
+                }
+            },
+            {
+                "id": "com.typesafe.akka:akka-actor_2.11:2.3.3@jar.pack.xz",
+                "name": "Minecraft Forge (akka-actor)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 746612,
+                    "MD5": "25cb22c3078e9fb3f7a861c912924862",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/akka-actor_2.11-2.3.3.jar.pack.xz"
+                }
+            },
+            {
+                "id": "com.typesafe:config:1.2.1@jar.pack.xz",
+                "name": "Minecraft Forge (typesafe-config)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 56636,
+                    "MD5": "10ec4ccabc4e68aac9cf87165ead5d7d",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/config-1.2.1.jar.pack.xz"
+                }
+            },
+            {
+                "id": "lzma:lzma:0.0.1",
+                "name": "Mojang (LZMA)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 5762,
+                    "MD5": "a3e3c3186e41c4a1a3027ba2bb23cdc6",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/lzma-0.0.1.jar"
+                }
+            },
+            {
+                "id": "net.sf.trove4j:trove4j:3.0.3",
+                "name": "Trove4J",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 2523218,
+                    "MD5": "8fc4d4e0129244f9fd39650c5f30feb2",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/trove4j-3.0.3.jar"
+                }
+            },
+            {
+                "id": "java3d:vecmath:1.5.2",
+                "name": "Vecmath",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 318956,
+                    "MD5": "e5d2b7f46c4800a32f62ce75676a5710",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/vecmath-1.5.2.jar"
+                }
+            },
+            {
+                "id": "net.sf.jopt-simple:jopt-simple:4.6",
+                "name": "Jopt-simple",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 62477,
+                    "MD5": "13560a58a79b46b82057686543e8d727",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/jopt-simple-4.6.jar"
+                }
+            },
+            {
+                "id": "net.minecraftforge:MercuriusUpdater:1.11.2",
+                "name": "MercuriusUpdater",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 15146,
+                    "MD5": "7556d06064ebbfa3b334a15092d725d0",
+                    "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/forge/MercuriusUpdater-1.11.2.jar"
+                }
+            }]
+        },
+        {
+            "id": "mezz:jei:1.11.2-4.5.0.290",
+            "name": "Just Enough Items",
+            "type": "ForgeMod",
+            "required":
+            {
+                "value": false
+            },
+            "artifact":
+            {
+                "size": 538740,
+                "MD5": "f4d931f6db6210621a86fa1e7eae8016",
+                "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/mods/jei_1.11.2-4.5.0.290.jar"
+            }
+        },
+        {
+            "id": "net.optifine:optifine:1.11.2_HD_U_C7",
+            "name": "Optifine",
+            "type": "ForgeMod",
+            "required":
+            {
+                "value": true
+            },
+            "artifact":
+            {
+                "size": 2254712,
+                "MD5": "0dd7761e908f9b245bb0dc0fac5649f5",
+                "url": "https://escartem.github.io/launcher/test/files/SampleServer-1.11.2/mods/OptiFine_1.11.2_HD_U_C7.jar"
+            }
+        }]
+    },
+    {
+        "id": "Testing-1.13.2",
+        "name": "Testing 1.13.2",
+        "description": "Serveur - hypixel",
+        "icon": "https://escartem.github.io/launcher/test/Testing-1.13.2/resources/server-prod.png",
+        "version": "0.0.1",
+        "address": "play.hypixel.net",
+        "minecraftVersion": "1.13.2",
+        "discord":
+        {
+            "shortId": "Testing",
+            "largeImageText": "Testing 1.13.2",
+            "largeImageKey": "server-prod"
+        },
+        "mainServer": false,
+        "autoconnect": false,
+        "modules": [
+        {
+            "id": "net.minecraftforge:forge:1.13.2-25.0.219",
+            "name": "Minecraft Forge (base jar)",
+            "type": "ForgeHosted",
+            "artifact":
+            {
+                "size": 159918,
+                "MD5": "c5a9c40711feb2b4ab0329c48256e30d",
+                "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/net/minecraftforge/forge/1.13.2-25.0.219/forge-1.13.2-25.0.219.jar"
+            },
+            "subModules": [
+            {
+                "id": "1.13.2-25.0.219",
+                "name": "Minecraft Forge (version.json)",
+                "type": "VersionManifest",
+                "artifact":
+                {
+                    "size": 11511,
+                    "MD5": "f13f9e20324d0a55c646d5fb8876b2bb",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/versions/1.13.2-forge-25.0.219/1.13.2-forge-25.0.219.json"
+                }
+            },
+            {
+                "id": "net.minecraftforge:forge:1.13.2-25.0.219:universal",
+                "name": "Minecraft Forge (universal jar)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 2343272,
+                    "MD5": "338c495d266da44ac1955caf91cc14c4",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/net/minecraftforge/forge/1.13.2-25.0.219/forge-1.13.2-25.0.219-universal.jar"
+                },
+                "subModules": []
+            },
+            {
+                "id": "net.minecraftforge:forge:1.13.2-25.0.219:client",
+                "name": "Minecraft Forge (client jar)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 3065519,
+                    "MD5": "df63f7288a8118c9b8836a3e53827aac",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/net/minecraftforge/forge/1.13.2-25.0.219/forge-1.13.2-25.0.219-client.jar"
+                },
+                "subModules": []
+            },
+            {
+                "id": "net.minecraft:client:1.13.2:slim",
+                "name": "Minecraft Forge (client slim)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 6641127,
+                    "MD5": "ac34772c702596fd774ddcd6d7402749",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/net/minecraft/client/1.13.2/client-1.13.2-slim.jar"
+                },
+                "subModules": []
+            },
+            {
+                "id": "net.minecraft:client:1.13.2:extra",
+                "name": "Minecraft Forge (client extra)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 9622361,
+                    "MD5": "dc66e2219e3de6e7ca05847fd3c7746d",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/net/minecraft/client/1.13.2/client-1.13.2-extra.jar"
+                },
+                "subModules": []
+            },
+            {
+                "id": "net.minecraft:client:1.13.2-20190213.203750:srg",
+                "name": "Minecraft Forge (client srg)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 8198877,
+                    "MD5": "0f76a03989ded67bdad660d06fb5efef",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/net/minecraft/client/1.13.2-20190213.203750/client-1.13.2-20190213.203750-srg.jar"
+                },
+                "subModules": []
+            },
+            {
+                "id": "com.paulscode:soundsystem:201809301515",
+                "name": "Minecraft Forge (soundsystem)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 66607,
+                    "MD5": "bf43e7b9f628534614b3fc5e4e69d209",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/com/paulscode/soundsystem/201809301515/soundsystem-201809301515.jar"
+                }
+            },
+            {
+                "id": "org.ow2.asm:asm:6.2",
+                "name": "Minecraft Forge (asm)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 111214,
+                    "MD5": "7abdce94068615d690495f45eb6eb980",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/org/ow2/asm/asm/6.2/asm-6.2.jar"
+                }
+            },
+            {
+                "id": "org.ow2.asm:asm-commons:6.2",
+                "name": "Minecraft Forge (asm-commons)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 78919,
+                    "MD5": "a031c9a32770c02c2f91d2bcbeceabcd",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/org/ow2/asm/asm-commons/6.2/asm-commons-6.2.jar"
+                }
+            },
+            {
+                "id": "org.ow2.asm:asm-tree:6.2",
+                "name": "Minecraft Forge (asm-tree)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 50370,
+                    "MD5": "e7279981c6764dcd73a99705acf5c9a6",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/org/ow2/asm/asm-tree/6.2/asm-tree-6.2.jar"
+                }
+            },
+            {
+                "id": "cpw.mods:modlauncher:2.1.1",
+                "name": "Minecraft Forge (modlauncher)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 101586,
+                    "MD5": "089ae3cf5afe10e96bb930b70dd99402",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/cpw/mods/modlauncher/2.1.1/modlauncher-2.1.1.jar"
+                }
+            },
+            {
+                "id": "cpw.mods:grossjava9hacks:1.1.0",
+                "name": "Minecraft Forge (grossjava9hacks)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 1759,
+                    "MD5": "1adde27730734a786f461ed048d440a0",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/cpw/mods/grossjava9hacks/1.1.0/grossjava9hacks-1.1.0.jar"
+                }
+            },
+            {
+                "id": "net.minecraftforge:accesstransformers:0.16.0-shadowed",
+                "name": "Minecraft Forge (accesstransformers)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 444428,
+                    "MD5": "dbe346d662c7bdff0988f941342932e6",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/net/minecraftforge/accesstransformers/0.16.0/accesstransformers-0.16.0-shadowed.jar"
+                }
+            },
+            {
+                "id": "net.minecraftforge:eventbus:0.9.2-service",
+                "name": "Minecraft Forge (eventbus)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 38908,
+                    "MD5": "77c6c079914a8369a185e11ae1a7a878",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/net/minecraftforge/eventbus/0.9.2/eventbus-0.9.2-service.jar"
+                }
+            },
+            {
+                "id": "net.minecraftforge:forgespi:0.13.0",
+                "name": "Minecraft Forge (forgespi)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 16607,
+                    "MD5": "5634ba7001f8501a2b553430e2068751",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/net/minecraftforge/forgespi/0.13.0/forgespi-0.13.0.jar"
+                }
+            },
+            {
+                "id": "net.minecraftforge:coremods:0.5.0",
+                "name": "Minecraft Forge (coremods)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 12284,
+                    "MD5": "d3da5879965cf6f37413d6d1a80d92a7",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/net/minecraftforge/coremods/0.5.0/coremods-0.5.0.jar"
+                }
+            },
+            {
+                "id": "net.minecraftforge:unsafe:0.2.0",
+                "name": "Minecraft Forge (unsafe)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 2834,
+                    "MD5": "2d1016ebe4c1a63dd50a59d26bd12db1",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/net/minecraftforge/unsafe/0.2.0/unsafe-0.2.0.jar"
+                }
+            },
+            {
+                "id": "com.electronwill.night-config:core:3.6.0",
+                "name": "Minecraft Forge (core)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 199763,
+                    "MD5": "841adeca8f5e5e092c7bafb412dcb615",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/com/electronwill/night-config/core/3.6.0/core-3.6.0.jar"
+                }
+            },
+            {
+                "id": "com.electronwill.night-config:toml:3.6.0",
+                "name": "Minecraft Forge (toml)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 31256,
+                    "MD5": "2d1d5f1fa4735b4e654613b493512432",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/com/electronwill/night-config/toml/3.6.0/toml-3.6.0.jar"
+                }
+            },
+            {
+                "id": "org.jline:jline:3.9.0",
+                "name": "Minecraft Forge (jline)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 707273,
+                    "MD5": "2db9aae140f810a72fc4a5cb5aa5cf9b",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/org/jline/jline/3.9.0/jline-3.9.0.jar"
+                }
+            },
+            {
+                "id": "org.apache.maven:maven-artifact:3.6.0",
+                "name": "Minecraft Forge (maven-artifact)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 55051,
+                    "MD5": "89e95013b11f347e48c0525965600404",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/org/apache/maven/maven-artifact/3.6.0/maven-artifact-3.6.0.jar"
+                }
+            },
+            {
+                "id": "net.jodah:typetools:0.6.0",
+                "name": "Minecraft Forge (typetools)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 14734,
+                    "MD5": "9f65b6e90eb986fe25afc39b8ed3f43b",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/net/jodah/typetools/0.6.0/typetools-0.6.0.jar"
+                }
+            },
+            {
+                "id": "java3d:vecmath:1.5.2",
+                "name": "Minecraft Forge (vecmath)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 318956,
+                    "MD5": "e5d2b7f46c4800a32f62ce75676a5710",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/java3d/vecmath/1.5.2/vecmath-1.5.2.jar"
+                }
+            },
+            {
+                "id": "org.apache.logging.log4j:log4j-api:2.11.2",
+                "name": "Minecraft Forge (log4j-api)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 266283,
+                    "MD5": "3f7ee51e3dd0830de799dae0b90243dd",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar"
+                }
+            },
+            {
+                "id": "org.apache.logging.log4j:log4j-core:2.11.2",
+                "name": "Minecraft Forge (log4j-core)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 1629585,
+                    "MD5": "c8bd8b5c5aaaa07a3dcbf57de01c9266",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/org/apache/logging/log4j/log4j-core/2.11.2/log4j-core-2.11.2.jar"
+                }
+            },
+            {
+                "id": "net.minecrell:terminalconsoleappender:1.1.1",
+                "name": "Minecraft Forge (terminalconsoleappender)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 15240,
+                    "MD5": "a190e88073a41dfa1b1d47854c41230b",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/net/minecrell/terminalconsoleappender/1.1.1/terminalconsoleappender-1.1.1.jar"
+                }
+            },
+            {
+                "id": "net.sf.jopt-simple:jopt-simple:5.0.4",
+                "name": "Minecraft Forge (jopt-simple)",
+                "type": "Library",
+                "artifact":
+                {
+                    "size": 78146,
+                    "MD5": "eb0d9dffe9b0eddead68fe678be76c49",
+                    "url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/repo/lib/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar"
+                }
+            },
+            {
+            	"id": "mezz:jei:1.13.2-5.0.0.30",
+            	"name": "Just Enough Items",
+            	"type": "ForgeMod",
+            	"required": {
+            		"value": false
+            	},
+            	"artifact": {
+            		"size": 960767,
+            		"MD5": "0ecc9ad3ab0f3e13f48760087d69bc2b",
+            		"url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/mods/jei-1.13.2-55.0.0.30.jar"
+            	}
+            },
+        	{
+        		"id": "net:optifine:optifine:1.13.2_HD_U_F5",
+        		"name": "Optifine",
+        		"type": "ForgeMod",
+        		"required": {
+        			"value": true
+        		},
+        		"artifact": {
+        			"size": 2854305,
+        			"MD5": "c12be63567910bb8964682cfd4b91f51",
+        			"url": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/mods/OptiFine_1.13.2_HD_U_F5.jar"
+        		}
+        	}]
+        }]
+    }]
 }
