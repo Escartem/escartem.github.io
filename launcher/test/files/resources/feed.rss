@@ -4,39 +4,47 @@
     <title>Nouveautées</title>
     <description>Nouveautées et annonces</description>
     <pubDate>Tue, 12 May 2020 13:39:00 +0200</pubDate>
-    <lastBuildDate>Wed, 13 May 2020 17:40:00 +0200</lastBuildDate>
-    <generator>Nouveautées Escartem Launcher</generator>
+    <lastBuildDate>Thu, 14 May 2020 13:52:00 +0200</lastBuildDate>
+    <generator>Nouveautées du Launcher</generator>
     <link>#</link>
     <atom:link rel="self" type="application/rss+xml" href="https://escartem.github.io/launcher/test/files/ressources/feed.rss"/>
     <item>
-      <title>Lancement du launcher</title>
-      <pubDate>Tue, 12 May 2020 17:40:00 +0200</pubDate>
-      <link>#</link>
-      <guid>#</guid>
-      <author>Escartem</author>
-      <dc:creator>Escartem</dc:creator>
-      <content:encoded><![CDATA[<div class="bbWrapper"><br />
-Texte!<br />
+    <title>Nouvelles version</title>
+    <pubDate>Thu, 14 May 2020 13:56:00 +0200</pubDate>
+    <link>#</link>
+    <guid>#</guid>
+    <author>Escartem</author>
+    <dc:creator>Escartem</dc:creator>
+    <content:encoded>
+        <![CDATA[<div class="bbWrapper"><br />
+<b>Nouvelles versions !</b><br />
 <br />
-Encore du texte.<br />
+Le launcher est maintenant a la version <b>0.0.3</b> et prend en charge la <u>1.12.2</u> et la <u>1.13.2</u>.<br />
 <br />
-<b>Texte en gras</b><br />
+Pour le moment, seul les version 1.11.2 et 1.12.2 fonctionnent correctement etant donné que forge 1.13 est encore en bêta.<br />
 <br />
-<b><span style="color: rgb(184, 49, 47)">Texte coloré.</span></b><br />
+La prise en charge 1.14 est encore en cours...<br />
+</div>]]>
+    </content:encoded>
+    <slash:comments>0</slash:comments>
+</item>
+    <item>
+    <title>Lancement du launcher</title>
+    <pubDate>Tue, 12 May 2020 17:40:00 +0200</pubDate>
+    <link>#</link>
+    <guid>#</guid>
+    <author>Escartem</author>
+    <dc:creator>Escartem</dc:creator>
+    <content:encoded>
+        <![CDATA[<div class="bbWrapper"><br />
+<b>Lancement du launcher !</b><br />
 <br />
-The prize will be advised shortly.<br />
+Le launcher est enfin lancé avec la toute première version, la <b><span style="color: rgb(184, 49, 47)">0.0.1</span></b>.<br />
 <br />
-<a href="https://forum.westeroscraft.com/attachments/1586958174738-png.2326/"
-		target="_blank"><img src="/data/attachments/2/2326-ffeae61fb860f34a42e5abf4f57af5e6.jpg"
-		class="bbImage "
-		style=""
-		alt="2326" /></a><br />
-<b>Photo exemple</b>.<br />
+<u>Des nouveautées vont bientôt arriver...</u><br />
 <br />
-<u>Texte souligné.</u><br />
-<br />
-<b>Au revoir!</b></div>]]></content:encoded>
-      <slash:comments>0</slash:comments>
-    </item>
+</div>]]>
+    </content:encoded>
+    <slash:comments>0</slash:comments>
   </channel>
 </rss>
