@@ -274,7 +274,7 @@
         "id": "Testing-1.13.2",
         "name": "Testing 1.13.2",
         "description": "Serveur - hypixel",
-        "icon": "https://escartem.github.io/launcher/test/Testing-1.13.2/resources/server-prod.png",
+        "icon": "https://escartem.github.io/launcher/test/files/Testing-1.13.2/resources/server-prod.png",
         "version": "0.0.1",
         "address": "play.hypixel.net",
         "minecraftVersion": "1.13.2",
