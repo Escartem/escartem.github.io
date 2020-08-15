@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Version Check</title>
+</head>
+<body>
+	<script lang="JavaScript">
+		function checkVersion()
+		{
+			var latestVersion = '2.1.0';
+			var latestRawVersion = '210';
+
+			var parameters = location.search.substring(1).split("&");
+
+			var temp = parameters[0].split("=");
+			var version = unescape(temp[1]);
+
+			temp = parameters[1].split("=");
+			var lang = unescape(temp[1]);
+
+			var rawVersion = version.split('.').join('');
+
+			if (rawVersion < latestRawVersion) {
+				window.location.replace("https://escartem.github.io/electron/frame/update_available?latest=" + latestVersion + "&current=" + version + "&lang=" + lang);
+			} else {
+				window.location.replace("https://escartem.github.io/electron/frame/no_update");
+			}
+		}
+	</script>
+</body>
+</html>
