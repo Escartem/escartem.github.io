@@ -36,7 +36,10 @@
 
 			var rawVersion = version.split('.').join('');
 
-			notify(lang);
+			setTimeout(() => {
+				notify(lang);
+			}, 2000);
+			//notify(lang);
 
 			if (rawVersion < latestRawVersion) {
 				setTimeout(() => {
