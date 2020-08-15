@@ -1,10 +1,9 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>Frame</title>
+    <title>Frame</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="notify.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138501748-2"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -33,36 +32,44 @@
     </script>
     <!-- End Google Tag Manager -->
 </head>
+
 <body>
 	<!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBF2TWW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <script>
-        function notify(lang) {
-            if (lang == 'fr') {
-                var text = "Aucune mise à jour";
-            } else if (lang == 'en') {
-                var text = "No updates";
-            }
+    <script type="text/javascript">
+    function notify(lang, current, latest) {
+    	if (lang == 'fr') {
+    		var text = "La version " + latest + " est disponible. Version actuelle : " + current + "\n Lien de téléchargement : bit.ly/FrameUpdate (cliquez pour cacher)"
+    	} else if (lang == 'en') {
+    		var text = "The version " + latest + " is available. Current version : " + current + "\n Download link : bit.ly/FrameUpdate (click to hide)"
+    	}
 
-            $.notify(text, {
-                clickToHide: true,
-                autoHide: true,
-                position: "b l",
-                className: "success"
-            })
-        }
+        $.notify(text, {
+            clickToHide: true,
+            autoHide: false,
+            position: "b l",
+            className: "warn"
+        })
+    }
 
-        function process() {
-            var parameters = location.search.substring(1).split("&");
+    function process()
+    {
+    	var parameters = location.search.substring(1).split("&");
 
-            var temp = parameters[0].split("=");
-            var lang = unescape(temp[1]);
+    	var temp = parameters[0].split("=");
+    	var latest = unescape(temp[1]);
 
-            notify(lang);
-        }
-        //notify('fr')
-        process();
+    	temp = parameters[1].split("=");
+    	var current = unescape(temp[1]);
+
+    	temp = parameters[2].split("=");
+    	var lang = unescape(temp[1]);
+
+    	notify(lang, current, latest);
+    }
+    process();
     </script>
 </body>
+
 </html>

@@ -2,9 +2,25 @@
 <html>
 <head>
 	<title>Version Check</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="notify.js"></script>
 </head>
 <body>
 	<script lang="JavaScript">
+		function notify(lang) {
+			if (lang == 'fr') {
+				var text = "Recherche de mise à jour en cours...";
+			} else if (lang == 'en') {
+				var text = "Searching for updates...";
+			}
+
+	        $.notify(text, {
+	            clickToHide: false,
+	            autoHide: false,
+	            position: "b l",
+	            className: "info"
+	        })
+    	}
 		function checkVersion()
 		{
 			var latestVersion = '2.1.0';
@@ -20,10 +36,17 @@
 
 			var rawVersion = version.split('.').join('');
 
+			notify(lang);
+
 			if (rawVersion < latestRawVersion) {
-				window.location.replace("https://escartem.github.io/electron/frame/update_available?latest=" + latestVersion + "&current=" + version + "&lang=" + lang);
+				setTimeout(() => {
+					window.location.replace("https://escartem.github.io/electron/frame/update_available?latest=" + latestVersion + "&current=" + version + "&lang=" + lang);
+				}, 5000);
 			} else {
-				window.location.replace("https://escartem.github.io/electron/frame/no_update");
+				setTimeout(() => {
+					window.location.replace("https://escartem.github.io/electron/frame/no_update?lang=" + lang);
+				}, 5000);
+				//window.location.replace("https://escartem.github.io/electron/frame/no_update");
 			}
 		}
 		checkVersion();
