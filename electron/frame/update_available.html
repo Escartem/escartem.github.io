@@ -40,14 +40,15 @@
     <script type="text/javascript">
     function notify(lang, current, latest) {
     	if (lang == 'fr') {
-    		var text = "La version " + latest + " est disponible. Version actuelle : " + current + "\n Lien de téléchargement : bit.ly/FrameUpdate (cliquez pour cacher)"
+    		var text = "La version " + latest + " est disponible. Version actuelle : " + current + "\n Lien de téléchargement : bit.ly/FrameUpdate"
     	} else if (lang == 'en') {
-    		var text = "The version " + latest + " is available. Current version : " + current + "\n Download link : bit.ly/FrameUpdate (click to hide)"
+    		var text = "The version " + latest + " is available. Current version : " + current + "\n Download link : bit.ly/FrameUpdate"
     	}
 
         $.notify(text, {
-            clickToHide: true,
-            autoHide: false,
+            clickToHide: false,
+            autoHide: true,
+            autoHideDelay: 10000,
             position: "b l",
             className: "warn"
         })
