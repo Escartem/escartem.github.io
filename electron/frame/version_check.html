@@ -44,11 +44,11 @@
 			if (rawVersion < latestRawVersion) {
 				setTimeout(() => {
 					window.location.replace("https://escartem.github.io/electron/frame/update_available?latest=" + latestVersion + "&current=" + version + "&lang=" + lang);
-				}, 5000);
+				}, 7500);
 			} else {
 				setTimeout(() => {
 					window.location.replace("https://escartem.github.io/electron/frame/no_update?lang=" + lang);
-				}, 5000);
+				}, 7500);
 				//window.location.replace("https://escartem.github.io/electron/frame/no_update");
 			}
 		}
