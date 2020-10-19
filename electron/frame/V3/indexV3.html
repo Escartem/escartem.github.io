@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Frame</title>
+	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="js/notify.js"></script>
+    <script src="js/prettify.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/notify.css">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138501748-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138501748-2');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PBF2TWW');
+    </script>
+    <!-- End Google Tag Manager -->
+    <style>
+        .fatal-error{
+           background: #304CD8;
+           background: -webkit-linear-gradient(left, #304CD8 0%, #9F3762 100%);
+           background: -ms-linear-gradient(left, #304CD8 0%, #9F3762 100%);
+           background: linear-gradient(to right, #304CD8 0%, #9F3762 100%);
+           color: #fff;
+           font-size: 25px;
+           padding: 35px;
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBF2TWW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script type="text/javascript">
+    	// notify script to check updates
+        function notify(bg, text, delay, icon) {
+            $.notify(text, {
+                //type:"danger",
+                align:"left",
+                verticalAlign:"bottom",
+                animationType:"drop",
+                delay: delay,
+                color: "#fff",
+                background: bg,
+                icon:icon,
+                close: false
+            });
+        }
+
+    	function rawVersion(version) {
+            try {
+        		var temp = version.split('.').join('');
+        		return temp
+            }
+            catch ( e ) {
+                return e
+            }
+    	}
+
+    	function check() {
+    		var latestVersion = "2.3.0";
+    		var latestRawVersion = rawVersion(latestVersion);
+
+            try {
+        		var parameters = location.search.substring(1).split("&");
+        		var temp = parameters[0].split("=");
+        		var version = unescape(temp[1]);
+        		temp = parameters[1].split("=");
+        		lang = unescape(temp[1]);
+            }
+            catch ( e ) {
+                notify("#D44950", " " + e, 10000, "close");
+                //$.notify("Hello World!", {class:"fatal-error", delay:100000000, align:"center", verticalAlign:"middle", animationType:"scale"});
+            }
+
+    		var currentRawVersion = rawVersion(version);
+
+            try {
+        		if (lang == 'fr') {
+        			var searching_update = " Recherche de mise à jour en cours...";
+        			var no_update = " Aucune mise à jour";
+        			var update_found = " La version " + latestVersion + " est disponible. Version actuelle : " + version + " \n Lien de téléchargement : bit.ly/FrameUpdate";
+        		} else if (lang == 'en') {
+        			var searching_update = " Searching for updates...";
+        			var no_update = " No update found";
+        			var update_found = " The version " + latestVersion + " is available. Current version : " + version + " \n Download link : bit.ly/FrameUpdate";
+        		}
+            }
+            catch ( e ) {
+                notify("#D44950", " " + e, 10000, "close");
+            }
+
+    		setTimeout(() => {
+    			//notify("info", searching_update, true, 7500);
+                notify("#4B7EE0", searching_update, 7500, "exclamation");
+    		}, 2000);
+
+    		setTimeout(() => {
+                try {
+        			if (currentRawVersion < latestRawVersion) {
+    	    			//notify("warn", update_found, true, 10000);
+                        notify("#D44950", update_found, 10000, "close");
+    	    		} else {
+    	    			//notify("success", no_update, true, 5000);
+                        notify("#20D67B", no_update, 5000, "check");
+    	    		}
+                }
+                catch ( e ) {
+                    notify("#D44950", " " + e, 10000, "close");
+                }
+    		}, 10000);
+    	}
+
+    	check();
+        //notify();
+    </script>
+</body>
+</html>
