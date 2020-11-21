@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Frame</title>
-	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <title>Frame</title>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="js/notify.js"></script>
     <script src="js/prettify.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/notify.css">
     <link rel="stylesheet" type="text/css" href="css/prettify.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138501748-2"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -50,99 +51,90 @@
         }
     </style>
 </head>
+
 <body>
-	<!-- Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBF2TWW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <script type="text/javascript">
-    	// notify script to check updates
-        function notify(bg, text, delay, icon) {
-            $.notify(text, {
-                //type:"danger",
-                align:"left",
-                verticalAlign:"bottom",
-                animationType:"drop",
-                delay: delay,
-                color: "#fff",
-                background: bg,
-                icon:icon,
-                close: false
-            });
+    // notify script to check updates
+    function notify(bg, text, delay, icon) {
+        $.notify(text, {
+            //type:"danger",
+            align: "left",
+            verticalAlign: "bottom",
+            animationType: "drop",
+            delay: delay,
+            color: "#fff",
+            background: bg,
+            icon: icon,
+            close: false
+        });
+    }
+
+    function rawVersion(version) {
+        try {
+            var temp = version.split('.').join('');
+            return temp
+        } catch (e) {
+            return e
         }
+    }
 
-    	function rawVersion(version) {
-            try {
-        		var temp = version.split('.').join('');
-        		return temp
-            }
-            catch ( e ) {
-                return e
-            }
-    	}
+    function check() {
+        var latestVersion = "2.3.0";
+        var latestSupportedVersion = "2.0.0";
+        var latestRawSupportedVersion = rawVersion(latestSupportedVersion);
+        var latestRawVersion = rawVersion(latestVersion);
 
-    	function check() {
-    		var latestVersion = "2.3.0";
-    		var latestSupportedVersion = "2.0.0";
-    		var latestRawSupportedVersion = rawVersion(latestSupportedVersion);
-    		var latestRawVersion = rawVersion(latestVersion);
+        try {
+            var parameters = location.search.substring(1).split("&");
+            var temp = parameters[0].split("=");
+            var version = unescape(temp[1]);
+            temp = parameters[1].split("=");
+            lang = unescape(temp[1]);
 
-            try {
-        		var parameters = location.search.substring(1).split("&");
-        		var temp = parameters[0].split("=");
-        		var version = unescape(temp[1]);
-        		temp = parameters[1].split("=");
-        		lang = unescape(temp[1]);
-            }
-            catch ( e ) {
-                notify("#D44950", " " + e, 10000, "close");
-                //$.notify("Hello World!", {class:"fatal-error", delay:100000000, align:"center", verticalAlign:"middle", animationType:"scale"});
-            }
+            var currentRawVersion = rawVersion(version);
 
-    		var currentRawVersion = rawVersion(version);
-
-            try {
-        		if (lang == 'fr') {
-        			var searching_update = " Recherche de mise à jour en cours...";
-        			var no_update = " Aucune mise à jour";
-        			var update_found = " La version " + latestVersion + " est disponible. Version actuelle : " + version + " \n Lien de téléchargement : bit.ly/UpdateFrame";
-					var critical_update = " Votre version n'est plus supportée, merci cde mettre à jour le programme avec ce lien : bit.ly/UpdateFrame";
-        		} else if (lang == 'en') {
-        			var searching_update = " Searching for updates...";
-        			var no_update = " No update found";
-        			var update_found = " The version " + latestVersion + " is available. Current version : " + version + " \n Download link : bit.ly/UpdateFrame";
-        		}
-            }
-            catch ( e ) {
-                notify("#D44950", " " + e, 10000, "close");
+            if (lang == 'fr') {
+                var searching_update = " Recherche de mise à jour en cours...";
+                var no_update = " Aucune mise à jour";
+                var update_found = " La version " + latestVersion + " est disponible. Version actuelle : " + version + " \n Lien de téléchargement : bit.ly/UpdateFrame";
+                var critical_update = " Votre version n'est plus supportée, merci de mettre à jour le programme avec ce lien : bit.ly/UpdateFrame";
+            } else if (lang == 'en') {
+                var searching_update = " Searching for updates...";
+                var no_update = " No update found";
+                var update_found = " The version " + latestVersion + " is available. Current version : " + version + " \n Download link : bit.ly/UpdateFrame";
+                var critical_update = " Your version is no longer supported, please update the program with this link : bit.ly/UpdateFrame";
             }
 
-    		setTimeout(() => {
-    			//notify("info", searching_update, true, 7500);
+            setTimeout(() => {
+                //notify("info", searching_update, true, 7500);
                 notify("#4B7EE0", searching_update, 7500, "exclamation");
-    		}, 2000);
+            }, 2000);
 
-    		setTimeout(() => {
-                try {
-                	if (currentRawVersion < latestRawSupportedVersion) {
-                		notify("#D44950", critical_update, 1000000, "close");
-                	} else {
-	        			if (currentRawVersion < latestRawVersion) {
-	    	    			//notify("warn", update_found, true, 10000);
-	                        notify("#EDEA26", update_found, 10000, "warn");
-	    	    		} else {
-	    	    			//notify("success", no_update, true, 5000);
-	                        notify("#20D67B", no_update, 5000, "check");
-	    	    		}
-	    	    	}
+            setTimeout(() => {
+                if (currentRawVersion < latestRawSupportedVersion) {
+                    notify("#D44950", critical_update, 1000000, "close");
+                } else {
+                    if (currentRawVersion < latestRawVersion) {
+                        //notify("warn", update_found, true, 10000);
+                        notify("#E89F20", update_found, 10000, "close");
+                    } else {
+                        //notify("success", no_update, true, 5000);
+                        notify("#20D67B", no_update, 5000, "check");
+                    }
                 }
-                catch ( e ) {
-                    notify("#D44950", " " + e, 10000, "close");
-                }
-    		}, 10000);
-    	}
+            }, 10000);
+        } catch (e) {
+            notify("#D44950", " " + e, 10000, "close");
+            //$.notify("Hello World!", {class:"fatal-error", delay:100000000, align:"center", verticalAlign:"middle", animationType:"scale"});
+        }
+    }
 
-    	check();
-        //notify();
+    check();
+    //notify();
     </script>
 </body>
+
 </html>
