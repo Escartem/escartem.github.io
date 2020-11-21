@@ -82,6 +82,8 @@
 
     	function check() {
     		var latestVersion = "2.3.0";
+    		var latestSupportedVersion = "2.0.0";
+    		var latestRawSupportedVersion = rawVersion(latestSupportedVersion);
     		var latestRawVersion = rawVersion(latestVersion);
 
             try {
@@ -103,6 +105,7 @@
         			var searching_update = " Recherche de mise à jour en cours...";
         			var no_update = " Aucune mise à jour";
         			var update_found = " La version " + latestVersion + " est disponible. Version actuelle : " + version + " \n Lien de téléchargement : bit.ly/UpdateFrame";
+					var critical_update = " Votre version n'est plus supportée, merci cde mettre à jour le programme avec ce lien : bit.ly/UpdateFrame";
         		} else if (lang == 'en') {
         			var searching_update = " Searching for updates...";
         			var no_update = " No update found";
@@ -120,13 +123,17 @@
 
     		setTimeout(() => {
                 try {
-        			if (currentRawVersion < latestRawVersion) {
-    	    			//notify("warn", update_found, true, 10000);
-                        notify("#D44950", update_found, 10000, "close");
-    	    		} else {
-    	    			//notify("success", no_update, true, 5000);
-                        notify("#20D67B", no_update, 5000, "check");
-    	    		}
+                	if (currentRawVersion < latestRawSupportedVersion) {
+                		notify("#D44950", critical_update, 1000000, "close");
+                	} else {
+	        			if (currentRawVersion < latestRawVersion) {
+	    	    			//notify("warn", update_found, true, 10000);
+	                        notify("#EDEA26", update_found, 10000, "warn");
+	    	    		} else {
+	    	    			//notify("success", no_update, true, 5000);
+	                        notify("#20D67B", no_update, 5000, "check");
+	    	    		}
+	    	    	}
                 }
                 catch ( e ) {
                     notify("#D44950", " " + e, 10000, "close");
