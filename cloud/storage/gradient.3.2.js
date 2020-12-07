@@ -66,6 +66,9 @@ md`# Gradient Generator 3.2`
     "#FF5828", // orangeish
     "#F69CFF", // pink
     "#FFA50F", // mustard
+    "#32CCBC",
+    "#28C76F",
+    "#E96D71",
   ]
 }
 );
