@@ -69,6 +69,7 @@ md`# Gradient Generator 3.2`
     "#32CCBC",
     "#28C76F",
     "#E96D71",
+    "#32DE84",
   ]
 }
 );
