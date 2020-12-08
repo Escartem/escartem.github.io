@@ -63,9 +63,9 @@ md`# Gradient Generator 3.2`
   // randomizeColors;
   return [
     "#5135FF", // violet
-    "#FF5828", // orangeish
-    "#F69CFF", // pink
-    "#FFA50F", // mustard
+    //"#FF5828", // orangeish
+    //"#F69CFF", // pink
+    //"#FFA50F", // mustard
     "#32CCBC",
     "#28C76F",
     "#E96D71",
