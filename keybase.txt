@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/escartem
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://escartem.github.io
+  * I am escartem (https://keybase.io/escartem) on keybase.
+  * I have a public key ASBfkbFTJ42bLfZgB-FGVZNoB_y0n2zEh10xuHunPNGRGQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01205f91b153278d9b2df66007e14655936807fcb49f6cc4875d31b87ba73cd191190a",
+      "host": "keybase.io",
+      "kid": "01205f91b153278d9b2df66007e14655936807fcb49f6cc4875d31b87ba73cd191190a",
+      "uid": "b8ba7a778e98a3c7a6eaccd1cdecd019",
+      "username": "escartem"
+    },
+    "merkle_root": {
+      "ctime": 1620664978,
+      "hash": "3cb3e99e06a5b4771e71501f6e932a609f32581a627536a658177bf5d4a127f2b80815abc636468bc894241c9997a579a65aa5d06a9a6509fe70f5af43649f07",
+      "hash_meta": "75b70b2a92842d53dccd08afda39fc020271db44b7ec12ed31a61a34f5f4731a",
+      "seqno": 19898603
+    },
+    "service": {
+      "entropy": "9EAileAw2C3UlkrUMo1yH6xN",
+      "hostname": "escartem.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.6.0"
+  },
+  "ctime": 1620665005,
+  "expire_in": 504576000,
+  "prev": "1156d2c0a20d0d26b6a6d658ad40f3feb6f54469713de24b429f8c6f66115336",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgX5GxUyeNmy32YAfhRlWTaAf8tJ9sxIddMbh7pzzRkRkKp3BheWxvYWTESpcCCcQgEVbSwKINDSa2ptZYrUDz/rb1RGlxPeJLQp+Mb2YRUzbEIGcnIE+Cmd62IIiuDI8UDyttR6rPcqkTGj/oyooWJFKCAgHCo3NpZ8RAi5EDtAHmdWzWYV6n2wkUhrLVupte0BQF+2Df4Z2Jzl+8uLJUrp7CHFF2Tr/K2A4Yq/XGmhX+XMfmqS1jta2yCahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPnEh3RzhYa4/JdRmvr2WL0TdebejU5gvf1m5HdWtEipo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/escartem
+
+==================================================================
