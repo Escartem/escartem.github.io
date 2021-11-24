@@ -97,7 +97,7 @@
     }
 
     function check() {
-        var latestVersion = "2.5.2";
+        var latestVersion = "2.5.3";
         var latestSupportedVersion = "2.4.0";
         var latestRawSupportedVersion = rawVersion(latestSupportedVersion);
         var latestRawVersion = rawVersion(latestVersion);
@@ -125,7 +125,11 @@
 
             setTimeout(() => {
                 //notify("info", searching_update, true, 7500);
-                notify("#4B7EE0", searching_update, 7500, "exclamation");
+                if currentRawVersion <= "252" {
+                    notify("#4B7EE0", searching_update, 7500, "exclamation");
+                }
+                //notify("#4B7EE0", searching_update, 7500, "exclamation");
+                console.log("recherche")
             }, 2000);
 
             setTimeout(() => {
