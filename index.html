@@ -11,7 +11,7 @@
 	<meta property="og:url" content="https://escartem.eu.org">
 	<meta property="og:image" content="https://escartem.eu.org/assets/img/icon.png">
 	<meta property="twitter:description" content="Escartem's website">
-	<meta property="twitter:title" content="Genshin Crop">
+	<meta property="twitter:title" content="Escartem's website">
 	<meta property="twitter:url" content="https://escartem.eu.org">
 	<meta property="twitter:image" content="https://escartem.eu.org/assets/img/icon.png">
 	<meta name="description" content="Escartem's website">
@@ -19,7 +19,8 @@
 	<script src="https://kit.fontawesome.com/8cacf0a9e5.js" crossorigin="anonymous"></script>
 	<script src="https://ena.escartem.eu.org/js/ems.js"></script>
 	<!-- CSS -->
-	<link rel="stylesheet" href="./assets/css/styles.css?v=101">
+	<link rel="stylesheet" href="./assets/css/fonts.css?v=1">
+	<link rel="stylesheet" href="./assets/css/styles.css?v=3">
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TV3VWGD927"></script>
 	<script>
@@ -28,6 +29,12 @@
 		gtag('js', new Date());
 
 		gtag('config', 'G-TV3VWGD927');
+	</script>
+	<!-- github redirect -->
+	<script>
+		if (window.location.host == "escartem.github.io") {
+			window.location.replace("https://escartem.eu.org");
+		}
 	</script>
 </head>
 <body style="overflow: hidden;">
@@ -78,10 +85,10 @@
 		</div>
 	</div>
 
-	<script type="module" src="./assets/js/background.js?v=100" ></script>
-	<script src="./assets/js/projects.js?v=100"></script>
-	<script src="./assets/js/particles.min.js?v=100"></script>
-	<script src="./assets/js/socials.js?v=100"></script>
+	<script type="module" src="./assets/js/background.js?v=1" ></script>
+	<script src="./assets/js/projects.js?v=1"></script>
+	<script src="./assets/js/particles.min.js?v=1"></script>
+	<script src="./assets/js/socials.js?v=1"></script>
 	<script>
 		window.addEventListener("load", () => {
 			document.getElementById("home").style.opacity = 1;

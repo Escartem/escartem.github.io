@@ -1,46 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>404 Error</title>
-        <link href="https://escartem.github.io/css/styles.css" rel="stylesheet" />
-        <style>
-            #layoutError_footer {
-                position: absolute;
-                bottom: 0px;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="layoutError">
-            <div id="layoutError_content">
-                <main>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-6">
-                                <div class="text-center mt-4">
-                                    <h1 class="display-1">404</h1>
-                                    <p class="lead">This requested URL was not found on this server.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-            </div>
-            <div id="layoutError_footer">
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">2018-2023 | Escartem</div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
-        </div>
-    </body>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="./assets/css/fonts.css?v=1">
+	<title>404</title>
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+
+			user-select: none;
+
+			--mid: #252525;
+			--light: #333333;
+
+			background-color: var(--light);
+			font-family: "product_sans_regular";
+			color: white;
+		}
+
+		.top {
+			height: 30px;
+			background-color: var(--mid);
+			display: flex;
+			align-items: center;
+		}
+
+		.back-text {
+			margin-left: 10px;
+			font-size: 1.5vw;
+		}
+
+		.back-text:hover {
+			text-decoration: underline;
+			cursor: pointer;
+			color: #52a5ff;
+		}
+
+		.main {
+			width: 100%;
+			height: calc(100% - 30px);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.error-code {
+			font-size: 25vw;
+		}
+
+		.error-text {
+			font-size: 3vw;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<span class="back-text" onclick="window.location.href = window.location.origin;"><- Go back ?</span>
+	</div>
+	<div class="main">
+		<span class="error-code">404</span>
+		<span class="error-text">Nothing is here, that's pretty disappointing 😔</span>
+	</div>
+</body>
 </html>
