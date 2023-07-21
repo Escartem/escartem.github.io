@@ -19,6 +19,15 @@ html, body {
 	--mid: #252525;
 	--light: #333333;
 
+	/** colors sets **/
+	--s-red-dark: #ef677f;
+	--s-red-light: #f3d5da;
+
+	--s-green-dark: #52ebb3;
+	--s-green-light: #c6efe5;
+
+	/** todo: blue + magenta ? **/
+
 	--purple: #683f9b;
 	--blue: #2a9d92;
 	--red: #9d2a3c;
@@ -106,6 +115,151 @@ i {
 	bottom: 0;
 	text-align: center;
 	animation: moveUpDown 2s ease-in-out infinite;
+}
+
+/** --- FEATURED --- **/
+
+#featured {
+	height: 35%;
+}
+
+#featured-wrapper {
+	height: calc(100% + 10vw);
+	background-color: #8BC6EC;
+	background-image: linear-gradient(180deg, #8BC6EC 0%, #9599E2 100%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+	width: 100%;
+}
+
+#featured-title {
+	font-size: min(7vw, 35px);
+}
+
+#featured-content {
+	height: calc(100% - 10vw);
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+
+#f-content-wrapper {
+	width: calc(100% - 40px);
+	display: flex;
+	align-items: center;
+	overflow-x: auto;
+	z-index: 1;
+	margin-left: 20px;
+	padding-left: 20px;
+	margin-right: 20px;
+	padding-right: 20px;
+}
+
+#f-content-wrapper .f-card:first-child { margin-left: auto; }
+#f-content-wrapper .f-card:last-child { margin-right: auto; }
+
+.f-card {
+	background-color: #8EC5FC;
+	background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+	aspect-ratio: 5/3;
+	height: 70%;
+	border: 2px solid black;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
+	margin: 10px;
+	box-shadow: 0px 0px 20px 0px;
+}
+
+.f-card-top {
+	height: 30%;
+	display: flex;
+	margin-left: 5px;
+	margin-top: 5px;
+	transform-style: preserve-3d;
+}
+
+.f-card-icon {
+	height: 100%;
+	width: auto;
+	aspect-ratio: 1;
+	transition: transform 250ms ease;
+}
+
+.f-card-title {
+	color: black;
+	font-size: 3.5vh;
+	transition: transform 250ms ease;
+}
+
+.f-card-middle {
+	height: 50%;
+	display: flex;
+	margin-left: 5px;
+	margin-right: 5px;
+	transform-style: preserve-3d;
+}
+
+.f-card-desc {
+	color: black;
+	font-size: 2vh;
+	transition: transform 250ms ease;
+	margin-top: 5px;
+}
+
+.f-card-bottom {
+	height: 20%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	transform-style: preserve-3d;
+}
+
+.f-btn-wrapper {
+	transition: transform 250ms ease;
+	transform-style: preserve-3d; 
+}
+
+.f-card-btn {
+	border-radius: 10px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	transition: 250ms;
+	font-size: 1.5vh;
+	transform: translateZ(1px);
+	height: 3vh;
+}
+
+/** 3d stuff **/
+.f-card:hover[zEnabled] .f-card-icon { transform: translateZ(40px); }
+.f-card:hover[zEnabled] .f-card-title { transform: translateZ(50px); }
+.f-card:hover[zEnabled] .f-card-desc { transform: translateZ(30px); }
+.f-card[zEnabled] .f-btn-wrapper:hover .f-card-btn { transform: translateZ(50px); }
+
+/** btn colors sets **/
+
+.s-red {
+	border: 2px solid var(--s-red-dark);
+	background-color: var(--s-red-light);
+}
+
+.s-red:hover {
+	background-color: var(--s-red-dark);
+}
+
+.s-green {
+	border: 2px solid var(--s-green-dark);
+	background-color: var(--s-green-light);
+}
+
+.s-green:hover {
+	background-color: var(--s-green-dark);
 }
 
 /** --- PROJECTS --- **/
@@ -288,7 +442,7 @@ i {
 .background {
 	position: absolute;
 	display: block;
-	top: calc(100% + 10vw);
+	top: calc(135% + 20vw);
 	width: 100%;
 	height: 100%;
 	left: 0;
@@ -370,7 +524,7 @@ i {
 	left: 0;
 	z-index: 0;
 	opacity: 0.5;
-	top: calc(200% + 20vw);
+	top: calc(235% + 30vw);
 }
 
 /** --- MOBILE --- **/
@@ -389,6 +543,7 @@ i {
 
 ::-webkit-scrollbar {
 	width: 5px !important;
+	height: 7px !important;
 }
 
 ::-webkit-scrollbar-track {
