@@ -7,9 +7,19 @@
 featured = document.getElementById("f-content-wrapper");
 
 function setupFeatured() {
-	for (const [key, value] of Object.entries(edata["featured"])) {
-		temp = edata["projects"][value];
-		addFeaturedCard(temp["name"], temp["short"], temp["btn"]["title"], temp["btn"]["url"], `${base_url}/${icon_path}/${value}.png`, value);
+	// i don't know why, but this section just doesn't want to render properly on some mobile devices no matter the browser, so just hide it and yeah good enough
+	if (isMobile.any == true) {
+		// hide featured section
+		document.getElementsByClassName("featured-transition")[0].classList.add("hidden")
+		document.getElementById("featured").classList.add("hidden")
+		// update heights
+		document.getElementsByClassName("background")[0].style.top = "calc(100% + 10vw)"
+		document.getElementById("footer-background").style.top = "calc(200% + 20vw)"
+	} else {
+		for (const [key, value] of Object.entries(edata["featured"])) {
+			temp = edata["projects"][value];
+			addFeaturedCard(temp["name"], temp["short"], temp["btn"]["title"], temp["btn"]["url"], `${base_url}/${icon_path}/${value}.png`, value);
+		}
 	}
 }
 
@@ -37,6 +47,7 @@ function addFeaturedCard(title, desc, btn, link, img, id) {
 	icon = document.createElement("img");
 	icon.draggable = false;
 	icon.classList.add("f-card-icon");
+	icon.alt = `${title} project icon`;
 	icon.src = img;
 
 	cardTitle = document.createElement("span");
@@ -109,6 +120,7 @@ function createLine(title, id, func, parent, img=null, right="▲", color=null) 
 		lineImg = document.createElement("img");
 		lineImg.src = `${base_url}/${icon_path}/${id}.png`;
 		lineImg.draggable = false;
+		lineImg.alt = `${lineTitle} project icon`;
 		lineDiv.appendChild(lineImg);
 	}
 
@@ -188,6 +200,7 @@ function setupCard(data, id) {
 	cardImg.id = "card-img";
 	cardImg.src = `${base_url}/${card_path}/${id}.png`;
 	cardImg.draggable = false;
+	cardImg.alt = "project image";
 	cardImg.onclick = function() {window.open(cardImg.src, "_blank")};
 	cardImg.style.cursor = "pointer";
 

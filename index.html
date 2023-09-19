@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="favicon.ico" />
+	<link rel="icon" href="favicon.ico">
 	<title>@Escartem</title>
 	<!-- meta -->
 	<meta property="og:description" content="Escartem's website">
@@ -23,7 +23,7 @@
 	</script>
 	<!-- CSS -->
 	<link rel="stylesheet" href="./assets/css/fonts.css?v=1">
-	<link rel="stylesheet" href="./assets/css/styles.css?v=3">
+	<link rel="stylesheet" href="./assets/css/styles.css?v=4">
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TV3VWGD927"></script>
 	<script>
@@ -45,14 +45,14 @@
 		<div id="home">
 			<div id="gradient" class="observablehq--running"></div>
 			<div id="home-content">
-				<img id="avatar" src="./assets/img/avatar.png" draggable="false">
+				<img id="avatar" src="./assets/img/avatar.png" draggable="false" alt="profile picture">
 				<span id="username">@Escartem</span>
 
-				<span id="scroll-text">scroll<br /><i class="fa-solid fa-arrow-down"></i></span>
+				<span id="scroll-text">scroll<br><i class="fa-solid fa-arrow-down"></i></span>
 			</div>
 		</div>
 
-		<div id="transition-container">
+		<div class="transition-container featured-transition">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8BC6EC" fill-opacity="1" d="M0,192L21.8,186.7C43.6,181,87,171,131,154.7C174.5,139,218,117,262,96C305.5,75,349,53,393,53.3C436.4,53,480,75,524,80C567.3,85,611,75,655,69.3C698.2,64,742,64,785,90.7C829.1,117,873,171,916,192C960,213,1004,203,1047,213.3C1090.9,224,1135,256,1178,256C1221.8,256,1265,224,1309,202.7C1352.7,181,1396,171,1418,165.3L1440,160L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path></svg>
 		</div>
 
@@ -65,7 +65,7 @@
 			</div>
 		</div>
 
-		<div id="transition-container">
+		<div class="transition-container">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--light)" fill-opacity="1" d="M0,128L26.7,117.3C53.3,107,107,85,160,106.7C213.3,128,267,192,320,208C373.3,224,427,192,480,149.3C533.3,107,587,53,640,69.3C693.3,85,747,171,800,197.3C853.3,224,907,192,960,176C1013.3,160,1067,160,1120,154.7C1173.3,149,1227,139,1280,160C1333.3,181,1387,235,1413,261.3L1440,288L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
 		</div>
 
@@ -88,7 +88,7 @@
 			<canvas class="background"></canvas>
 		</div>
 
-		<div id="transition-container">
+		<div class="transition-container">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--dark)" fill-opacity="1" d="M0,256L26.7,240C53.3,224,107,192,160,197.3C213.3,203,267,245,320,234.7C373.3,224,427,160,480,122.7C533.3,85,587,75,640,85.3C693.3,96,747,128,800,154.7C853.3,181,907,203,960,192C1013.3,181,1067,139,1120,144C1173.3,149,1227,203,1280,202.7C1333.3,203,1387,149,1413,122.7L1440,96L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
 		</div>
 
@@ -105,8 +105,9 @@
 	<script src="./assets/js/vanilla-tilt.min.js"></script>
 	<script type="module" src="./assets/js/background.js" ></script>
 	<script src="./assets/js/particles.min.js"></script>
+	<script src="./assets/js/isMobile.min.js"></script>
 	<!-- app -->
-	<script src="./assets/js/app.js?v=1"></script>
+	<script src="./assets/js/app.js?v=2"></script>
 	<script>
 		window.addEventListener("load", () => {
 			document.getElementById("home").style.opacity = 1;

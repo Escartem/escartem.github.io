@@ -2,7 +2,7 @@
 
 @keyframes moveUpDown {
 	0%, 100% {
-		margin-bottom: 0px;
+		margin-bottom: 0;
 	}
 	50% {
 		margin-bottom: 10px;
@@ -36,7 +36,7 @@ html, body {
 }
 
 span {
-	font-family: "product_sans_regular";
+	font-family: "product_sans_regular", serif;
 	color: white;
 }
 
@@ -54,7 +54,7 @@ i {
 	height: 100%;
 }
 
-#transition-container {
+.transition-container {
 	transform: scaleY(0.3);
 	height: 10vw;
 }
@@ -173,7 +173,7 @@ i {
 	transform-style: preserve-3d;
 	transform: perspective(1000px);
 	margin: 10px;
-	box-shadow: 0px 0px 20px 0px;
+	box-shadow: 0 0 20px 0;
 }
 
 .f-card-top {
@@ -187,7 +187,7 @@ i {
 .f-card-icon {
 	height: 100%;
 	width: auto;
-	aspect-ratio: 1;
+	aspect-ratio: 1/1;
 	transition: transform 250ms ease;
 }
 
@@ -489,7 +489,7 @@ i {
 	align-items: center;
 	transition: 250ms;
 	margin-inline: 15px;
-	box-shadow: 0px 0px 25px 15px rgba(0, 0, 0, 0.33);
+	box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.33);
 }
 
 .icon-placeholder:hover {
@@ -534,9 +534,15 @@ i {
 	#card-left { width: calc(100% - 40px); height: auto; }
 	#card-img { width: 55%; }
 	#left-wrapper { flex-direction: row; align-items: center; }
-	#button-wrapper { margin-top: 0px; }
+	#button-wrapper { margin-top: 0; }
 	#card-button { width: 100%; height: auto; min-height: 25px; }
 	#card-right { width: calc(100% - 40px); margin-left: 20px; margin-bottom: 20px; height: inherit; }
+}
+
+.hidden {
+	height: 0 !important;
+	visibility: hidden;
+	pointer-events: none;
 }
 
 /** --- SCROLL --- **/
