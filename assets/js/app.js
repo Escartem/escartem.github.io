@@ -1,5 +1,5 @@
 // aeugh
-setupEMS({RCB: !0, DVT: !1, BSC: !0, SRC: !0});
+setupEMS({"RCB": true, "DVT": false, "BSC": true, "SRC": false});
 
 //////////////////////
 // --- FEATURED --- //
