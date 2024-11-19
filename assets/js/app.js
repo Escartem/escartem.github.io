@@ -322,7 +322,7 @@ function setupSocials() {
 	}
 
 	// random splash text at bottom
-	document.getElementById("footer-text").innerHTML = `${splashes[Math.floor(Math.random()*splashes.length)]} | Escartem 2023`;
+	document.getElementById("footer-text").innerHTML = `${splashes[Math.floor(Math.random()*splashes.length)]} | Escartem 2024`;
 }
 
 ////////////////////////
@@ -336,7 +336,7 @@ window.mobileAndTabletCheck = function() {
 }
 
 window.addEventListener("load", () => {
-	fetch("https://ena.escartem.eu.org/egio/edata.json").then(response => response.json()).then(json => {
+	fetch("https://ena.escartem.moe/egio/edata.json").then(response => response.json()).then(json => {
 		// global
 		edata = json;
 		base_url = edata["path"]["base_url"];
